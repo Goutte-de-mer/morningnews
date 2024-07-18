@@ -4,6 +4,7 @@ import Head from "next/head";
 import Article from "./Article";
 import TopArticle from "./TopArticle";
 import styles from "../styles/Home.module.css";
+import domain from "../../myvariables";
 
 function Home() {
   const bookmarks = useSelector((state) => state.bookmarks.value);
@@ -16,7 +17,7 @@ function Home() {
   );
 
   useEffect(() => {
-    fetch("http://localhost:3000/articles")
+    fetch(`${domain}/articles`)
       .then((response) => response.json())
       .then((data) => {
         setTopArticle(data.articles[0]);

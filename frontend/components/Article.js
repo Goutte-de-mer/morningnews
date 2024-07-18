@@ -6,6 +6,7 @@ import styles from "../styles/Article.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBookmark } from "@fortawesome/free-solid-svg-icons";
 import { faEyeSlash } from "@fortawesome/free-solid-svg-icons";
+import domain from "../../myvariables";
 
 function Article(props) {
   const dispatch = useDispatch();
@@ -20,7 +21,7 @@ function Article(props) {
       return;
     }
 
-    fetch(`http://localhost:3000/users/canBookmark/${user.token}`)
+    fetch(`${domain}/users/canBookmark/${user.token}`)
       .then((response) => response.json())
       .then((data) => {
         if (data.result && data.canBookmark) {
