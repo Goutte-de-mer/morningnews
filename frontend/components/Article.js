@@ -6,7 +6,7 @@ import styles from "../styles/Article.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBookmark } from "@fortawesome/free-solid-svg-icons";
 import { faEyeSlash } from "@fortawesome/free-solid-svg-icons";
-import domain from "../../myvariables";
+import domain from "../myvariables";
 
 function Article(props) {
   const dispatch = useDispatch();

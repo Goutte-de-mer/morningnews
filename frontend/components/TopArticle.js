@@ -3,7 +3,7 @@ import { addBookmark, removeBookmark } from "../reducers/bookmarks";
 import styles from "../styles/TopArticle.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBookmark } from "@fortawesome/free-solid-svg-icons";
-import domain from "../../myvariables";
+import domain from "../myvariables";
 
 function TopArticle(props) {
   const dispatch = useDispatch();

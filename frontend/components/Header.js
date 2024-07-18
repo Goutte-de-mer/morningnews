@@ -9,7 +9,7 @@ import { faUser, faXmark, faEye } from "@fortawesome/free-solid-svg-icons";
 import Moment from "react-moment";
 import { Modal } from "antd";
 import Link from "next/link";
-import domain from "../../myvariables";
+import domain from "../myvariables";
 
 function Header() {
   const dispatch = useDispatch();
